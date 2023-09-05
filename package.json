@@ -1,0 +1,26 @@
+{
+  "name": "tari",
+  "version": "1.0.0",
+  "description": "TariTari - Mern stack app for a real business  needing an app for orders and delivering products with weights, details and more.",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Benny902/tari.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Benny902/tari/issues"
+  },
+  "homepage": "https://github.com/Benny902/tari#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
