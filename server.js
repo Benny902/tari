@@ -34,6 +34,14 @@ const server = http.createServer((req, res) => {
             res.setHeader('Location', '/about'); // redirect to new about page
             res.end();
             break;
+        case '/collect':
+            path += 'collect.html';
+            res.statusCode = 200; // ok status code
+            break;
+        case '/customer':
+            path += 'customer.html';
+            res.statusCode = 200; // ok status code
+            break;
         default:
             path += '404.html';
             res.statusCode = 404; // error code
