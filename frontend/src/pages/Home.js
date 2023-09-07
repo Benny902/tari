@@ -22,7 +22,7 @@ const Home = () => {
   }, [dispatch])
 
   return (
-    <div className="home">
+    <div className="home" dir="rtl">
     <OrderForm />
       <div className="orders">
         {orders && orders.map(order => (

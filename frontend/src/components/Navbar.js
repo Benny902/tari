@@ -6,6 +6,7 @@ import fb from '../assets/fb.png';
 const Navbar = () => {
   const styles = {
     color:'#80F24B',
+    fontSize: '110px'
   };
   const styles2 = {
     color:'black',

@@ -3,7 +3,7 @@ import { useState } from 'react';
 const OrderForm = () => {
   const [title, setTitle] = useState('');
   const [phone, setPhone] = useState('');
-  const [items, setItems] = useState([{ item: '', reps: '' }]);
+  const [items, setItems] = useState([{ item: '' }]);
   const [error, setError] = useState(null);
 
   const handleInputChange = (index, e) => {
@@ -14,7 +14,7 @@ const OrderForm = () => {
   };
 
   const handleAddItem = () => {
-    setItems([...items, { item: '', reps: '' }]);
+    setItems([...items, { item: '' }]);
   };
 
   const handleRemoveItem = (index) => {
@@ -44,31 +44,40 @@ const OrderForm = () => {
       setError(null);
       setTitle('');
       setPhone('');
-      setItems([{ item: '', reps: '' }]);
-      
-      // Show a pop-up message with the order details
-      const orderDetails = `Title: ${title}\nPhone: ${phone}\nItems:\n${items.map(item => `   - ${item.item}: ${item.reps}`).join('\n')}`;
-      alert(`Order submitted successfully!\n\n${orderDetails}`);
+      setItems([{ item: '' }]);
+      setItems([{ item: '' }]); // Assuming you only want to keep the 'item' field
+    alert(`הזמנה בוצעה בהצלחה!\n\nלקוח: ${title}\nפלאפון: ${phone}\nמוצרים: ${items.map(item => item.item).join(', ')}`);
     }
   };
+  const addButton = {
+    background:'green', 
+  };
+  const removeButton = {
+    background:'red',
+  };
+  const submitButton = {
+    background:'blue',
+    width: '70%'
+  };
+
 
   return (
     <form className="create" onSubmit={handleSubmit}>
-      <h3>הוספת הזמנה חדשה</h3>
-      <label>שם העסק</label>
+      <h1>הוספת הזמנה חדשה</h1>
+      <label>לקוח</label>
       <input
         type="text"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
       />
-      <label>מס' פלאפון איש קשר</label>
+      <label>מס' פלאפון</label>
       <input
-        type="text"
+        type="number"
         onChange={(e) => setPhone(e.target.value)}
         value={phone}
       />
       <div className="form-group">
-        <h3>מוצרים</h3>
+        <h2>מוצרים</h2>
         {items.map((item, index) => (
           <div key={index}>
             <label>מוצר:</label>
@@ -78,19 +87,18 @@ const OrderForm = () => {
               value={item.item}
               onChange={(e) => handleInputChange(index, e)}
             />
-            <label>כמות:</label>
-            <input
-              type="text"
-              name="reps"
-              value={item.reps}
-              onChange={(e) => handleInputChange(index, e)}
-            />
-            <button type="button" onClick={() => handleRemoveItem(index)}>הסרת פריט</button>
+            {index > 0 && (
+              <button type="button" style={removeButton} onClick={() => handleRemoveItem(index)}>
+               -  הסרת פריט  
+              </button>
+            )}
           </div>
         ))}
-        <button type="button" onClick={handleAddItem}>הוספת פריט</button>
+        <button type="button" style={addButton} onClick={handleAddItem}>
+          + הוספת פריט
+        </button>
       </div>
-      <button type="submit">סיום הזמנה</button>
+      <button type="submit" style={submitButton}> ✓ סיום הזמנה </button>
       {error && <div className="error">{error}</div>}
     </form>
   );

@@ -1,27 +1,27 @@
-const express = require('express')
+const express = require('express');
 const {
   getOrders, 
   getOrder, 
   createOrder, 
   deleteOrder, 
   updateOrder
-} = require('../controllers/orderController')
+} = require('../controllers/orderController');
 
-const router = express.Router()
+const router = express.Router();
 
 // GET all orders
-router.get('/', getOrders)
+router.get('/', getOrders);
 
 // GET a single order
-router.get('/:id', getOrder)
+router.get('/:id', getOrder);
 
 // POST a new order
-router.post('/', createOrder)
+router.post('/', createOrder);
 
 // DELETE a order
-router.delete('/:id', deleteOrder)
+router.delete('/:id', deleteOrder);
 
 // UPDATE a order
-router.patch('/:id', updateOrder)
+router.patch('/:id', updateOrder);
 
-module.exports = router
+module.exports = router;

@@ -12,6 +12,7 @@ body {
   font-family: "Poppins";
   font-weight:bold;
   font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
 }
 header {
   background: #fff;
@@ -58,8 +59,11 @@ label {
   margin: 0;
 }
 
-
+input{
+  text-align: right;
+}
 .form-group input {
+  text-align: right;
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;

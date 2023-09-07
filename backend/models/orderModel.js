@@ -8,15 +8,11 @@ const orderSchema = new Schema({
     required: true
   },
   phone: {
-    type: String,
+    type: Number,
     required: true
   },
   items: [{
     item: {
-      type: String,
-      required: true
-    },
-    reps: {
       type: String,
       required: true
     }
