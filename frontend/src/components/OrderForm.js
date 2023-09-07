@@ -45,18 +45,22 @@ const OrderForm = () => {
       setTitle('');
       setPhone('');
       setItems([{ item: '' }]);
-      setItems([{ item: '' }]); // Assuming you only want to keep the 'item' field
+      setItems([{ item: '' }]); 
     alert(`הזמנה בוצעה בהצלחה!\n\nלקוח: ${title}\nפלאפון: ${phone}\nמוצרים: ${items.map(item => item.item).join(', ')}`);
     }
   };
   const addButton = {
     background:'green', 
+    marginTop:'30px',
+    width: '50%'
   };
   const removeButton = {
     background:'red',
   };
   const submitButton = {
     background:'blue',
+    marginBottom:'100px',
+    marginTop:'50px',
     width: '70%'
   };
 
@@ -77,10 +81,10 @@ const OrderForm = () => {
         value={phone}
       />
       <div className="form-group">
-        <h2>מוצרים</h2>
+        <h2>מוצרים </h2>
         {items.map((item, index) => (
           <div key={index}>
-            <label>מוצר:</label>
+            <label>מוצר (נא לציין יחידות/קרטון/ק"ג) </label>
             <input
               type="text"
               name="item"

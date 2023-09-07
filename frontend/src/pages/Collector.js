@@ -5,7 +5,7 @@ import { useOrdersContext } from "../hooks/useOrdersContext"
 import OrderDetails from "../components/OrderDetails"
 import OrderForm from "../components/OrderForm"
 
-const Home = () => {
+const Collector = () => {
   const { orders, dispatch } = useOrdersContext()
 
   useEffect(() => {
@@ -22,15 +22,18 @@ const Home = () => {
   }, [dispatch])
 
   return (
-    <div className="home" dir="rtl"> {/*rtl = right to left for hebrew*/}
-    <OrderForm />
+    <div className="home" dir="rtl">
+   
+    {/* <OrderForm />*/}
+
       <div className="orders">
         {orders && orders.map(order => (
           <OrderDetails order={order} key={order._id} />
         ))}
       </div>
+
     </div>
   )
 }
 
-export default Home
+export default Collector
