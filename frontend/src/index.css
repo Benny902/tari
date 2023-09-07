@@ -1,0 +1,146 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+  font-weight:bold;
+  font-family: 'Quicksand', sans-serif;
+}
+header {
+  background: #fff;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+header .container {
+  max-width: 600px;
+  max-height: 100px;
+  margin: 0 auto;
+  padding: 1px 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 30px;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  align-items: center;
+  text-align: center; /*for hebrew*/
+}
+
+
+.form-group {
+  display:block;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+label {
+  text-align: right; /* Adjust text alignment as needed */
+  margin: 0;
+}
+
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group.error label {
+  color: var(--error);
+}
+
+.form-group.error input {
+  border-color: var(--error);
+}
+
+
+
+.order-details {
+  align-items: center;
+  text-align: right;
+  background: #fff;
+  border-radius: 4px;
+  margin: 10px auto;
+  padding: 10px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.order-details h4 {
+  margin: 0 0 1px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.order-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.order-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+
+/* new order form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
