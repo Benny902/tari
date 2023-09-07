@@ -17,6 +17,12 @@ const OrderForm = () => {
     setItems([...items, { item: '', reps: '' }]);
   };
 
+  const handleRemoveItem = (index) => {
+    const updatedItems = [...items];
+    updatedItems.splice(index, 1);
+    setItems(updatedItems);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -39,6 +45,10 @@ const OrderForm = () => {
       setTitle('');
       setPhone('');
       setItems([{ item: '', reps: '' }]);
+      
+      // Show a pop-up message with the order details
+      const orderDetails = `Title: ${title}\nPhone: ${phone}\nItems:\n${items.map(item => `   - ${item.item}: ${item.reps}`).join('\n')}`;
+      alert(`Order submitted successfully!\n\n${orderDetails}`);
     }
   };
 
@@ -53,7 +63,7 @@ const OrderForm = () => {
       />
       <label>מס' פלאפון איש קשר</label>
       <input
-        type="number"
+        type="text"
         onChange={(e) => setPhone(e.target.value)}
         value={phone}
       />
@@ -70,11 +80,12 @@ const OrderForm = () => {
             />
             <label>כמות:</label>
             <input
-              type="number"
+              type="text"
               name="reps"
               value={item.reps}
               onChange={(e) => handleInputChange(index, e)}
             />
+            <button type="button" onClick={() => handleRemoveItem(index)}>הסרת פריט</button>
           </div>
         ))}
         <button type="button" onClick={handleAddItem}>הוספת פריט</button>
