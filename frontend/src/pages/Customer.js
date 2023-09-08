@@ -2,11 +2,11 @@ import { useEffect } from "react"
 import { useOrdersContext } from "../hooks/useOrdersContext"
 
 // components
-import OrderDetails from "../components/OrderDetails"
+//import OrderDetails from "../components/OrderDetails"
 import OrderForm from "../components/OrderForm"
 
 const Customer = () => {
-  const { orders, dispatch } = useOrdersContext()
+  const { dispatch } = useOrdersContext()
 
   useEffect(() => {
     const fetchOrders = async () => {

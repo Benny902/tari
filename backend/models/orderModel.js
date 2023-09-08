@@ -15,8 +15,16 @@ const orderSchema = new Schema({
     item: {
       type: String,
       required: true
-    }
-  }]
+    },
+  }],
+  createdAt: {
+    type: Date,
+    default: Date.now
+  },
+  isDone: {
+    type: Boolean,
+    default: false
+  }
 }, { timestamps: true });
 
 module.exports = mongoose.model('Order', orderSchema);

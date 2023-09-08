@@ -171,3 +171,46 @@ header .container2 {
   font-size: 14px;
 }
 
+
+.success-message {
+  border: 2px solid green;
+  padding: 10px;
+}
+
+/* Add a red border to the order container */
+.order-container {
+  border: 2px solid red;
+  margin: 20px;
+  padding-bottom: -20px;
+  position: relative; /* Add position for button placement */
+}
+
+/* Add a green border when order is done */
+.order-done {
+  border-color: green;
+}
+
+/* Add styles for the button */
+.order-container button {
+  background: rgba(0, 102, 255, 0.623);
+}
+
+/* Add styles for the order summary */
+.order-summary {
+  border: 2px solid red;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+/* Add styles for the order summary */
+.order-container.minimized {
+  border: 2px solid red;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.order-container.minimized .order-details {
+  display: none;
+}

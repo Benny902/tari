@@ -80,13 +80,21 @@ const updateOrder = async (req, res) => {
     return res.status(400).json({ error: 'No such order' });
   }
 
-  const order = await Order.findOneAndUpdate({ _id: id }, { ...req.body });
+  try {
+    const order = await Order.findOneAndUpdate(
+      { _id: id },
+      { ...req.body },
+      { new: true } // Set { new: true } to get the updated order
+    );
 
-  if (!order) {
-    return res.status(400).json({ error: 'No such order' });
+    if (!order) {
+      return res.status(400).json({ error: 'No such order' });
+    }
+
+    res.status(200).json(order);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
   }
-
-  res.status(200).json(order);
 };
 
 module.exports = {

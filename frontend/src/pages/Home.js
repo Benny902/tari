@@ -24,6 +24,8 @@ const Home = () => {
   return (
     <div className="home" dir="rtl"> {/*rtl = right to left for hebrew*/}
     <OrderForm />
+    <p></p>
+    <p></p>
       <div className="orders">
         {orders && orders.map(order => (
           <OrderDetails order={order} key={order._id} />

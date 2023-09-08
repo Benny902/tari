@@ -1,12 +1,31 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useOrdersContext } from "../hooks/useOrdersContext"
-
-// components
 import OrderDetails from "../components/OrderDetails"
-import OrderForm from "../components/OrderForm"
 
 const Collector = () => {
-  const { orders, dispatch } = useOrdersContext()
+  const { dispatch } = useOrdersContext()
+  const [localOrders, setLocalOrders] = useState([]); // Add local state
+
+  const toggleOrderStatus = async (id, isDone) => {
+    const response = await fetch(`/api/orders/${id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ isDone: !isDone })
+    });
+
+    const json = await response.json();
+
+    if (response.ok) {
+      dispatch({ type: 'UPDATE_ORDER', payload: json });
+      setLocalOrders(prevOrders => 
+        prevOrders.map(order => 
+          order._id === id ? { ...order, isDone: !isDone } : order
+        )
+      );
+    }
+  };
 
   useEffect(() => {
     const fetchOrders = async () => {
@@ -14,7 +33,8 @@ const Collector = () => {
       const json = await response.json()
 
       if (response.ok) {
-        dispatch({type: 'SET_ORDERS', payload: json})
+        dispatch({type: 'SET_ORDERS', payload: json});
+        setLocalOrders(json);
       }
     }
 
@@ -23,17 +43,22 @@ const Collector = () => {
 
   return (
     <div className="home" dir="rtl">
-   
-    {/* <OrderForm />*/}
-
+      <h1>רשימת הזמנות</h1>
       <div className="orders">
-        {orders && orders.map(order => (
-          <OrderDetails order={order} key={order._id} />
+        {localOrders && localOrders.map(order => (
+          <div key={order._id} className={`order-container ${order.isDone ? 'order-done' : 'order-not-done'}`}>
+              <OrderDetails order={order} />
+              <button onClick={() => toggleOrderStatus(order._id, order.isDone)}>
+                  {order.isDone ? '✓ בוצע' : 'בוצע? לחץ אם ההזמנה בוצעה'}
+              </button>
+          </div>
+            
         ))}
-      </div>
 
+      </div>
     </div>
   )
 }
 
 export default Collector
+//{order.isDone ? '✓ בוצע' : 'בוצע? לחץ אם ההזמנה בוצעה'}

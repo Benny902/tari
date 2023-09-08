@@ -1,5 +1,5 @@
 import { useOrdersContext } from '../hooks/useOrdersContext'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // date fns
 //import formatDistanceToNow from 'date-fns/formatDistanceToNow'
@@ -7,6 +7,9 @@ import { format } from 'date-fns';
 
 const OrderDetails = ({ order }) => {
   const [items] = useState(order.items || []);
+  const [isMinimized, setIsMinimized] = useState(
+    JSON.parse(localStorage.getItem(`order_${order._id}`)) || false
+  );
 
   const { dispatch } = useOrdersContext()
   const handleClick = async () => {
@@ -20,24 +23,33 @@ const OrderDetails = ({ order }) => {
     }
   }
 
+  useEffect(() => {
+    localStorage.setItem(`order_${order._id}`, JSON.stringify(isMinimized));
+  }, [isMinimized, order._id]);
+
   return (
-    <div className="order-details">
-      <h4>לקוח: {order.title}</h4>
-      <p>תאריך הזמנה: {format(new Date(order.createdAt), 'dd/MM HH:mm')}
-        {/*formatDistanceToNow(new Date(order.createdAt), { addSuffix: true })*/}</p>
-      <p><strong>מס' פלאפון  :  </strong>{order.phone}</p>
-      <div>
-      <strong> : מוצרים</strong>
-        {items.map((item, index) => (
-          <div key={index}>
-            <p>{item.item}</p>
+    <div className={`order-details ${isMinimized ? 'minimized' : ''}`}>
+    
+      <h4> <button onClick={() => setIsMinimized(!isMinimized)}>
+        {isMinimized ? '↙' : '↗'}
+      </button>&nbsp;&nbsp;  לקוח: {order.title}</h4>
+      {!isMinimized && (
+        <>
+          <p>תאריך הזמנה: {format(new Date(order.createdAt), 'dd/MM HH:mm')}</p>
+          <p><strong>מס' פלאפון  :  </strong>{order.phone}</p>
+          <div>
+            <strong> : מוצרים</strong>
+            {items.map((item, index) => (
+              <div key={index}>
+                <p>{item.item}</p>
+              </div>
+            ))}
+            <p>
+            </p>
+                <span className="material-symbols-outlined" style={{color: "red", display:'contents'}}  onClick={handleClick}>delete</span>
           </div>
-          
-        ))}
-        <p>
-        </p>
-            <span className="material-symbols-outlined" style={{color: "red", display:'contents'}}  onClick={handleClick}>delete</span>
-      </div>
+        </>
+      )}
     </div>
   );
 };
