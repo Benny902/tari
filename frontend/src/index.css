@@ -214,3 +214,21 @@ header .container2 {
 .order-container.minimized .order-details {
   display: none;
 }
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.order-container {
+  position: relative; /* Make sure this container has a position set */
+}
+
+/* ... (your existing styles) */

@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
-// date fns
-//import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 import { format } from 'date-fns';
 
-/*for collectors */
-const OrderDetails = ({ order }) => {  
+const OrderDetails2 = ({ order, handleDelete }) => { 
   const [items] = useState(order.items || []);
   const [isMinimized, setIsMinimized] = useState(
     JSON.parse(localStorage.getItem(`order_${order._id}`)) || false
@@ -17,10 +13,12 @@ const OrderDetails = ({ order }) => {
 
   return (
     <div className={`order-details ${isMinimized ? 'minimized' : ''}`}>
-    
-      <h4> <button onClick={() => setIsMinimized(!isMinimized)}>
-        {isMinimized ? '↙' : '↗'}
-      </button>&nbsp;&nbsp;  לקוח: {order.title}</h4>
+      <h4>
+        <button onClick={() => setIsMinimized(!isMinimized)}>
+          {isMinimized ? '↙' : '↗'}
+        </button>&nbsp;&nbsp;  לקוח: {order.title}
+        <button className="delete-button" onClick={() => handleDelete(order._id)}>מחק</button>
+      </h4>
       {!isMinimized && (
         <>
           <p>תאריך הזמנה: {format(new Date(order.createdAt), 'dd/MM HH:mm')}</p>
@@ -41,4 +39,4 @@ const OrderDetails = ({ order }) => {
   );
 };
 
-export default OrderDetails;
+export default OrderDetails2;

@@ -4,7 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Navbar from './components/Navbar'
 import Collector from './pages/Collector'
-import Customer from './pages/Customer'
+import Manager from './pages/Manager'
+import NotFound from './pages/NotFound'
 import Footer from './components/Footer'
 
 function App() {
@@ -16,20 +17,10 @@ function App() {
         <div className="pages">
           <Routes>
 
-            <Route 
-              path="/" 
-              element={<Home />} 
-            />
-
-             <Route 
-              path="/collector" 
-              element={<Collector />} 
-            />
-
-              <Route 
-              path="/customer" 
-              element={<Customer />} 
-            />
+          <Route path="/" element={<Home />} />
+          <Route path="/collector" element={<Collector />} />
+          <Route path="/manager" element={<Manager />} />
+          <Route path="*" element={<NotFound />} />
 
           </Routes>
         </div>

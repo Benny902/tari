@@ -26,6 +26,7 @@ const OrderForm = () => {
 
   const availableItems = ['מוצר1', 'מוצר2', 'מוצר3', 'מוצר4', 'מוצר5', 'מוצר6', 'מוצר7',
                            'מוצר8', 'מוצר9', 'מוצר10', 'מוצר11', 'מוצר12', 'מוצר13', 'מוצר14', 'מוצר15'];
+                           /// to be changed to the real products soon.
 
   const getSuggestions = (value) => {
     const inputValue = value.trim().toLowerCase();

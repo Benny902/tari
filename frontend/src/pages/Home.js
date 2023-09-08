@@ -2,11 +2,11 @@ import { useEffect } from "react"
 import { useOrdersContext } from "../hooks/useOrdersContext"
 
 // components
-import OrderDetails from "../components/OrderDetails"
+//import OrderDetails from "../components/OrderDetails"
 import OrderForm from "../components/OrderForm"
 
 const Home = () => {
-  const { orders, dispatch } = useOrdersContext()
+  const { dispatch } = useOrdersContext() // removed "orders ,"
 
   useEffect(() => {
     const fetchOrders = async () => {
@@ -26,11 +26,7 @@ const Home = () => {
     <OrderForm />
     <p></p>
     <p></p>
-      <div className="orders">
-        {orders && orders.map(order => (
-          <OrderDetails order={order} key={order._id} />
-        ))}
-      </div>
+    
     </div>
   )
 }
