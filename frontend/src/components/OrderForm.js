@@ -24,9 +24,9 @@ const OrderForm = () => {
     setItems(updatedItems);
   };
 
-  const availableItems = ['מוצר1', 'מוצר2', 'מוצר3', 'מוצר4', 'מוצר5', 'מוצר6', 'מוצר7',
+  const availableItems = ['מוצר1', '.מוצר2', 'מוצר3', 'מוצר4', 'מוצר5', 'מוצר6', 'מוצר7',
                            'מוצר8', 'מוצר9', 'מוצר10', 'מוצר11', 'מוצר12', 'מוצר13', 'מוצר14', 'מוצר15'];
-                           /// to be changed to the real products soon.
+      /// to be changed to the real products soon.  can start each item with "." so that if user searches for "." he will see all the items.
 
   const getSuggestions = (value) => {
     const inputValue = value.trim().toLowerCase();
