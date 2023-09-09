@@ -106,6 +106,7 @@ const OrderForm = () => {
         <h2>מוצרים </h2>
         {items.map((item, index) => (
           <div key={index}>
+          <p></p>
             <label>מוצר (נא לציין יחידות/קרטון/ק"ג) </label>
             <input
               type="text"
@@ -114,20 +115,19 @@ const OrderForm = () => {
               onChange={(e) => handleInputChange(index, e)}
               list={`suggestions-${index}`}
             />
+            <button type="button" style={removeButton} onClick={() => handleRemoveItem(index)}>
+                -  הסרת מוצר  
+              </button>
             <datalist id={`suggestions-${index}`}>
               {getSuggestions(item.item).map((suggestion, i) => (
                 <option key={i} value={suggestion} />
               ))}
             </datalist>
-            {index > 0 && (
-              <button type="button" style={removeButton} onClick={() => handleRemoveItem(index)}>
-                -  הסרת פריט  
-              </button>
-            )}
+       
           </div>
         ))}
         <button type="button" style={addButton} onClick={handleAddItem}>
-          + הוספת פריט
+          + הוספת מוצר
         </button>
       </div>
       <button type="submit" style={submitButton}> ✓ סיום הזמנה </button>
