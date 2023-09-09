@@ -23,3 +23,7 @@ a page for the Manager only: localhost:3000/manager (this page is like the Colle
 on the home page i did not add buttons to direct to these pages, because they are not supposed to be known to the customers.
 
 
+Main homepage: ![image](https://github.com/Benny902/tari/assets/73943596/2b3b8a19-b6be-45d5-a1ac-04b0a1b4ed92)
+after pressing submit order (סיום הזמנה): ![image](https://github.com/Benny902/tari/assets/73943596/59cb2118-d43d-4253-8284-1ff23b933cb4)
+Collector's page: ![image](https://github.com/Benny902/tari/assets/73943596/a43b4684-feda-4aad-9877-53be259fa5e2)
+Manager's page (the difference is the Delete(מחק) button: ![image](https://github.com/Benny902/tari/assets/73943596/30e87240-62d0-43be-88d1-1062119a7631)
