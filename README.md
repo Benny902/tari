@@ -3,7 +3,7 @@
 ## webapp is live, main page for the customers: https://taritari.onrender.com ,  <br>
 ## a page for collectors: https://taritari.onrender.com/collector , and a page for the manager: https://taritari.onrender.com/manager  .<br>
 
-## TariTari - web app for a real business
+## TariTari - web app for a real business, therefore made in hebrew for the business to use.
 
 ### Used MERN STACK (MongoDB, Express, React, Nodejs)
 
