@@ -1,5 +1,7 @@
 # tari
 
+deployed: https://taritari.onrender.com/
+
 ## TariTari - web app for a real business
 
 ### Used MERN STACK (MongoDB, Express, React, Nodejs)
@@ -19,4 +21,4 @@ a page for the collectors only: localhost:3000/collector
 a page for the Manager only: localhost:3000/manager (this page is like the Collector page, but with the option to delete orders.)
 on the home page i did not add buttons to direct to these pages, because they are not supposed to be known to the customers.
 
-the web app will be deployed to the company's website soon.
+
