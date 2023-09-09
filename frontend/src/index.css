@@ -94,7 +94,7 @@ input{
 .order-details h4 {
   margin: 0 0 1px 0;
   font-size: 1.2em;
-  color: var(--primary);
+  color: black;
 }
 .order-details p {
   margin: 0;
