@@ -33,8 +33,15 @@ after pressing submit order (סיום הזמנה):
 
 ![image](https://github.com/Benny902/tari/assets/73943596/59cb2118-d43d-4253-8284-1ff23b933cb4)
 
+
 Collector's page:
 
+
 ![image](https://github.com/Benny902/tari/assets/73943596/a43b4684-feda-4aad-9877-53be259fa5e2)
+
+
 Manager's page (the difference is the Delete(מחק) button:
+
+
+![image](https://github.com/Benny902/tari/assets/73943596/30e87240-62d0-43be-88d1-1062119a7631)
 ![image](https://github.com/Benny902/tari/assets/73943596/30e87240-62d0-43be-88d1-1062119a7631)
