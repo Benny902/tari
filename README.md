@@ -3,7 +3,8 @@
 ## webapp is live, main page for the customers: https://taritari.onrender.com ,  <br>
 ## a page for collectors: https://taritari.onrender.com/collector , and a page for the manager: https://taritari.onrender.com/manager  .<br>
 
-## TariTari - web app for a real business, therefore made in hebrew for the business to use.
+## TariTari - web app for a real business in israel, therefore made in Hebrew for the business to use.
+also implemented RTL (Right To Left), because the Hebrew language is written from Right to Left.
 
 ### Used MERN STACK (MongoDB, Express, React, Nodejs)
 
