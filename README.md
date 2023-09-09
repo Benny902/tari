@@ -44,4 +44,10 @@ Manager's page (the difference is the Delete(מחק) button:
 
 
 ![image](https://github.com/Benny902/tari/assets/73943596/30e87240-62d0-43be-88d1-1062119a7631)
-![image](https://github.com/Benny902/tari/assets/73943596/30e87240-62d0-43be-88d1-1062119a7631)
+
+
+
+
+
+
+![image](https://github.com/Benny902/tari/assets/73943596/30e87240-62d0-43be-88d1-1062119a7631) ![image](https://github.com/Benny902/tari/assets/73943596/30e87240-62d0-43be-88d1-1062119a7631)
