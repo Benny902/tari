@@ -1,8 +1,6 @@
 # tari
 
-## webapp is live, main page for the customers: https://taritari.onrender.com ,  <br>
-
-## a page for collectors: https://taritari.onrender.com/collector , and a page for the manager: https://taritari.onrender.com/manager  .<br>
+deployed: https://taritari.onrender.com/
 
 ## TariTari - web app for a real business
 
