@@ -46,12 +46,16 @@ const OrderForm = () => {
   };
   const removeButton = {
     background:'red',
+    height:'18px',
+    padding: '4px',
+    lineHeight: '0px',
+    float:'left',
   };
   const submitButton = {
     background:'blue',
     marginBottom:'10px',
     marginTop:'50px',
-    width: '70%'
+    width: '70%',
   };
 
   const handleSubmit = async (e) => {
