@@ -42,7 +42,10 @@ const OrderForm = () => {
   const addButton = {
     background:'green', 
     marginTop:'30px',
-    width: '50%'
+    marginRight:'1px',
+    width: '40%',
+    minWidth:'200px',
+    float:'right',
   };
   const removeButton = {
     background:'red',
@@ -56,6 +59,7 @@ const OrderForm = () => {
     marginBottom:'10px',
     marginTop:'50px',
     width: '70%',
+    minWidth:'250px',
   };
 
   const handleSubmit = async (e) => {
