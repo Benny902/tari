@@ -19,7 +19,7 @@ const Navbar = () => {
         <h1 style={styles}>טרי טרי</h1>   
         </Link>
       </div>
-      <h2 style={styles2}><a href="https://facebook.com"><img src={fb} width="45px" alt="fb"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://instagram.com"><img src={instagram} width="45px" alt="insta"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://wa.me/972508116697"><img src={wa} width="52px" alt="wa"/></a></h2>
+      <h2 style={styles2}><a href="https://facebook.com"><img src={fb} width="45px" alt="fb"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://instagram.com"><img src={instagram} width="45px" alt="insta"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://wa.me/972533383079"><img src={wa} width="52px" alt="wa"/></a></h2>
       
     </header>
   )
