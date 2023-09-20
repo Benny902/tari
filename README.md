@@ -14,7 +14,9 @@ on the app, the customer submits his order, and all the orders are being deliver
 made to improve efficiency in the work place.
 
 to run the app, open two terminals,
+
 on the first terminal write: 'cd backend' and then 'npm install' and then 'npm start' .
+
 on the second terminal write: 'cd frontend' and then 'npm install' and then 'npm start' .
 
 the app will start on the main page "localhost:3000/" which shows the order form for the customer.
