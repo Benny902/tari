@@ -1,6 +1,7 @@
 # tari
 
 ## webapp is live, main page for the customers: https://taritari.onrender.com ,  <br>
+(the current database is for testing, feel free to add/delete orders)
 ## a page for collectors: https://taritari.onrender.com/collector , and a page for the manager: https://taritari.onrender.com/manager  .<br>
 
 ## TariTari - web app for a real business in israel, therefore made in Hebrew for the business to use.
