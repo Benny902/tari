@@ -24,6 +24,7 @@ the app will start on the main page "localhost:3000/" which shows the order form
 and i've also implemented two separate pages:
 a page for the collectors only: localhost:3000/collector,  
 and a page for the Manager only: localhost:3000/manager (this page is like the Collector page, but with the option to delete orders.)  
+
 on the home page i did not add buttons to direct to these pages, because they are not supposed to be known to the customers.
 
 
