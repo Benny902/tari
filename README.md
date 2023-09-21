@@ -13,7 +13,7 @@ This web app solves the manager's problem of needing to deal with the orders on 
 on the app, the customer submits his order, and all the orders are being delivered to the collectors page, which there they have options to view all the orders and also mark/unmark as done/minimize/maximize etc.
 made to improve efficiency in the work place.
 
-to run the app, open two terminals,
+to run the web app locally, open two terminals:
 
 on the first terminal write: 'cd backend' and then 'npm install' and then 'npm start' .  
 
