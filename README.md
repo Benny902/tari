@@ -3,7 +3,8 @@
 ## webapp is deployed, main page for the customers: https://tari-tari-5c1910427284.herokuapp.com ,  <br>
 (the current database is for testing, feel free to add/delete orders)
 ## a page for collectors: https://tari-tari-5c1910427284.herokuapp.com/collector , <br>
-and a page for the manager: https://tari-tari-5c1910427284.herokuapp.com/manager  .<br>
+
+## and a page for the manager: https://tari-tari-5c1910427284.herokuapp.com/manager  .<br>
 
 ## TariTari - web app for a real business in israel, therefore made in Hebrew for the business to use.
 also implemented RTL (Right To Left), because the Hebrew language is written from Right to Left.
