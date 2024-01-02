@@ -25,7 +25,7 @@ and a page for the Manager only: localhost:3000/manager (this page is like the C
 on the home page, I did not add buttons to direct to these pages because they are irrelevant and not supposed to be known to the customers.
 
 
-1. Main homepage; 1b. Filling form;  2. After pressing submit order (סיום הזמנה),   
+1. Main homepage; 2. Filling form;  3. After pressing submit order (סיום הזמנה);   
 
 <img src="https://github.com/Benny902/tari/assets/73943596/5e3d520a-3138-417c-a3c6-34e89dc859b4" width="250">
 <img src="https://github.com/Benny902/tari/assets/73943596/a9f75a85-f535-4e77-868c-37300df64f65" width="250">
@@ -33,20 +33,10 @@ on the home page, I did not add buttons to direct to these pages because they ar
 
 
 
-3. Collector's page;   4. Manager's page (the difference is the Delete(מחק) button option:
+4. Collector's page;   5. Manager's page (the difference is the Delete(מחק) button option; 6. marked order as done & minimized; 
 
-
-![image](https://github.com/Benny902/tari/assets/73943596/a43b4684-feda-4aad-9877-53be259fa5e2) ![image](https://github.com/Benny902/tari/assets/73943596/30e87240-62d0-43be-88d1-1062119a7631)
-
-
-
-
-5. marked the last order as done;   6. minimized that order:
-
-
- ![image](https://github.com/Benny902/tari/assets/73943596/0c0f8a98-47be-4042-9bef-7dc2538f2669) ![image](https://github.com/Benny902/tari/assets/73943596/108974f7-8963-4d9a-9d0f-6dcd8e74b3ad)
-
-
-
+<img src="https://github.com/Benny902/tari/assets/73943596/e894b509-f109-43cf-9b5f-581f7fe07053" width="250">
+<img src="https://github.com/Benny902/tari/assets/73943596/94402870-3330-460b-b560-7f1c750c22ad" width="250">
+<img src="https://github.com/Benny902/tari/assets/73943596/ec3d0243-89ef-440d-a06a-c951f69fb1aa" width="250">
 
 
