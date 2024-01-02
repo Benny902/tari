@@ -28,7 +28,7 @@ on the home page, I did not add buttons to direct to these pages because they ar
 1. Main homepage;   2. After pressing submit order (סיום הזמנה),   
 
 
-![image](https://github.com/Benny902/tari/assets/73943596/2b3b8a19-b6be-45d5-a1ac-04b0a1b4ed92) ![image](https://github.com/Benny902/tari/assets/73943596/59cb2118-d43d-4253-8284-1ff23b933cb4) 
+![image](https://github.com/Benny902/tari/assets/73943596/5e3d520a-3138-417c-a3c6-34e89dc859b4) ![image](https://github.com/Benny902/tari/assets/73943596/59cb2118-d43d-4253-8284-1ff23b933cb4) 
 
 
 
