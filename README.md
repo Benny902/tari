@@ -25,11 +25,11 @@ and a page for the Manager only: localhost:3000/manager (this page is like the C
 on the home page, I did not add buttons to direct to these pages because they are irrelevant and not supposed to be known to the customers.
 
 
-1. Main homepage;   2. After pressing submit order (סיום הזמנה),   
+1. Main homepage; 1b. Filling form;  2. After pressing submit order (סיום הזמנה),   
 
-<img src="https://github.com/Benny902/tari/assets/73943596/5e3d520a-3138-417c-a3c6-34e89dc859b4" width="300">
-<img src="https://github.com/Benny902/tari/assets/73943596/a9f75a85-f535-4e77-868c-37300df64f65" width="300">
-
+<img src="https://github.com/Benny902/tari/assets/73943596/5e3d520a-3138-417c-a3c6-34e89dc859b4" width="250">
+<img src="https://github.com/Benny902/tari/assets/73943596/a9f75a85-f535-4e77-868c-37300df64f65" width="250">
+<img src="https://github.com/Benny902/tari/assets/73943596/b7c066b1-b53e-41e5-93bb-1f27e670ea57" width="250">
 
 
 
