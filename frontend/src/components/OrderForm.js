@@ -43,22 +43,23 @@ const OrderForm = () => {
     background:'green', 
     marginTop:'30px',
     marginRight:'1px',
-    width: '40%',
+    //width: '40%',
     minWidth:'200px',
-    float:'right',
+    float:'center',
   };
   const removeButton = {
     background:'red',
     height:'18px',
-    padding: '4px',
+    padding: '16px',
     lineHeight: '0px',
-    float:'left',
+    marginBottom:'1px',
+    float:'center',
   };
   const submitButton = {
     background:'blue',
     marginBottom:'10px',
-    marginTop:'50px',
-    width: '70%',
+    marginTop:'10px',
+    //width: '70%',
     minWidth:'250px',
   };
 
@@ -93,26 +94,30 @@ const OrderForm = () => {
 
   return (
     <form className="create" onSubmit={handleSubmit}>
-      <h1>הוספת הזמנה חדשה</h1>
-      <label>לקוח</label>
+      <h2>הוספת הזמנה חדשה</h2>
+      <label></label>
       <input
+      placeholder='שם לקוח'
         type="text"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
       />
-      <label>מס' פלאפון</label>
+      <label></label>
       <input
+      placeholder="מס' פלאפון"
         type="number"
         onChange={(e) => setPhone(e.target.value)}
         value={phone}
       />
       <div className="form-group">
-        <h2>מוצרים </h2>
+        <h3>מוצרים <p style={{fontSize: '14px', marginTop: '-4px'}}>(ניתן לרשום כוכבית * על מנת לראות את רשימת המוצרים) </p></h3>
+        
         {items.map((item, index) => (
           <div key={index}>
           <p></p>
-            <label>מוצר (נא לציין יחידות/קרטון/ק"ג) </label>
+            <label> </label>
             <input
+            placeholder='מוצר (נא לציין יחידות/קרטון/ק"ג)'
               type="text"
               name="item"
               value={item.item}

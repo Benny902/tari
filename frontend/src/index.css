@@ -7,7 +7,7 @@
   --error: #e7195a;
 }
 body {
-  background: #f1f1f1;
+  background: #d1d1d1;
   margin: 0;
   font-family: "Poppins";
   font-weight:bold;
@@ -15,15 +15,15 @@ body {
   font-size: 20px;
 }
 header {
-  background: #fff;
+  background: rgb(255, 255, 255);
   text-align: center;
   font-family: 'Quicksand', sans-serif;
 }
 header .container {
   max-width: 600px;
-  max-height: 50px;
+  max-height: 110px;
   margin: 0 auto;
-  padding: 1px 1px;
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -60,7 +60,11 @@ label {
 }
 
 input{
+  display: block;
+  margin : 0 auto;
   text-align: right;
+  max-width: 500px;
+  font-size: 18px;
 }
 .form-group input {
   text-align: right;
@@ -157,7 +161,6 @@ footer {
   display: flex;
   align-items: center;
   max-height: 10px;
-  
 }
 
 header .container2 {
@@ -170,7 +173,6 @@ header .container2 {
   justify-content: space-evenly;
   font-size: 14px;
 }
-
 
 .success-message {
   border: 2px solid green;

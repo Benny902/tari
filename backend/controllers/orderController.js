@@ -51,7 +51,7 @@ const createOrder = async (req, res) => {
     const order = await Order.create({ title, phone, items });
     res.status(200).json(order);
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    res.status(400).json({ error: 'חייב לרשום שם + פלאפון + לפחות מוצר אחד' });
   }
 };
 
